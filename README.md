@@ -1,4 +1,4 @@
-# Go Learning Repository
+# Learning Go
 
 This repository contains examples and exercises for learning the Go programming language. It covers fundamental Go concepts through practical examples organized by topic.
 

@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// define the array
 	var intArr [10]int32
@@ -14,20 +16,20 @@ func main() {
 	//fmt.Println(&intArr[7]) // get the address
 
 	// int2Arr := [5]int32{1, 2, 3, 4, 5}
-	// int2Arr := [...]int32{4, 5, 6}
+	// int2Arr := []int32{}
 	// fmt.Println("Initial Array: ", int2Arr)
 
-	// intSlice := append(int2Arr[:], 7)
+	// intSlice := append(int2Arr, 7)
 	// fmt.Printf("The length is %v with capacity %v: ", len(intSlice), cap(intSlice))
 
 	// var intSlice2 []int32 = []int32{8, 9}
 	// intSlice2 = append(intSlice, intSlice2...)
 	// fmt.Println(intSlice2)
 
-	// var intSlice3 []int32 = make([]int32, 3)
+	// var intSlice3 []int32 = make([]int32, 3,8)
 	// fmt.Println(cap(intSlice3))
 
-	myMap := make(map[string]uint8)
+	myMap := make(map[string]int)
 	myMap["Jonathan"] = 21
 	myMap["Reynold"] = 20
 	myMap["Ranjeeta"] = 30
@@ -37,9 +39,9 @@ func main() {
 	// age, ok := myMap["Jonathan"]
 	// fmt.Println(age)
 	// fmt.Println(ok)
-
+	fmt.Printf("Before Deletion: %v\n", myMap)
 	delete(myMap, "Jonathan")
-	// fmt.Println(myMap)
+	fmt.Printf("After Deletion : %v\n", myMap)
 
 	// for name, age := range myMap {
 	// 	fmt.Printf("Name:%v, \nAge:%v \n", name, age)
@@ -55,7 +57,7 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 
-	myArray := [...]int32{1, 2, 3, 4, 5, 6, 7}
+	myArray := [...]int{1, 2, 3, 4, 5, 6, 7}
 	for i, v := range myArray {
 		println("index: ", i, " :> ", " value: ", v)
 	}

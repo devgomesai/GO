@@ -12,7 +12,7 @@ func AddNumbers(a int, b int) int {
 }
 
 func main() {
-	var intNum int = 32767
+	var intNum = 32767 // intNum := 1516
 	fmt.Println("Hello World")
 	fmt.Println(intNum)
 
@@ -25,8 +25,8 @@ func main() {
 	var intNum2 int = 2
 	fmt.Println(intNum1 / intNum2)
 
-	my_str := "Hello World"
-	// fmt.Println(len(my_str))
+	my_str := "Hello 😂 World"
+	fmt.Println(len(my_str))
 	string_len := utf8.RuneCountInString(my_str)
 	fmt.Println("The Length of the String ( "+my_str+" ): ", string_len)
 	num1 := 10

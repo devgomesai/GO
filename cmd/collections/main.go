@@ -34,6 +34,10 @@ func main() {
 	myMap["Reynold"] = 20
 	myMap["Ranjeeta"] = 30
 
+	for name, age := range myMap {
+		fmt.Println("Name: ", name, "Age: ", age)
+	}
+
 	// fmt.Println(myMap["Jonathan"])
 
 	// age, ok := myMap["Jonathan"]
